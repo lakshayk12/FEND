@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox</title>
+    <style>
+        .container {
+            display: flex;
+            flex-direction: column;
+            /* flex-direction, an important setting of a flex */
+
+            border: 2px solid gray;
+            align-items: center;
+            justify-content: baseline;
+        }
+
+        .box {
+            width: 250px;
+            height: 150px;
+            border: 1px solid red;
+        }
+
+        #one {
+            order: 1;
+        }
+
+        #two {
+            order: 2;
+        }
+
+        #three {
+            order: 1;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <box id="one" class="box">
+            Box 1
+        </box>
+        <box id="two" class="box">
+            Box 2
+        </box>
+        <box id="three" class="box">
+            Box 3
+        </box>
+    </div>
+</body>
+
+</html>
