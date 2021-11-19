@@ -79,6 +79,25 @@
         /* rules for large screen */
         /* } */
         /* } */
+
+        #nestedGrid {
+            display: grid;
+            grid-template-columns: 50% 50%;
+            grid-template-rows: 50% 50%;
+            border: 1px solid black;
+        }
+
+        .photobox {
+            width: 650px;
+            height: 150px;
+            border: 2px dashed palegreen;
+            background-color: azure;
+        }
+
+        #one {
+            background-image: url("https://images.unsplash.com/photo-1453728013993-6d66e9c9123a?ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8dmlld3xlbnwwfHwwfHw%3D&ixlib=rb-1.2.1&w=1000&q=80");
+            background-size: contain;
+        }
     </style>
 </head>
 
@@ -86,7 +105,14 @@
     <div class="container">
         <div class="header box">Header</div>
         <div class="sidebar box">Sidebar</div>
-        <div class="content box">Content</div>
+        <div class="content box">
+            <div id="nestedGrid">
+                <div id="one" class="photobox"></div>
+                <div id="one" class="photobox"></div>
+                <div id="one" class="photobox"></div>
+                <div id="one" class="photobox"></div>
+            </div>
+        </div>
         <div class="footer box">Footer</div>
     </div>
 </body>
