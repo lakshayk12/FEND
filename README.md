@@ -1,4 +1,4 @@
 # IntroHTMLCSS
  
 - Used this repo to learn WebD.
-- attended Frond end nano degree by Udacity.
+- Attended Front End Development Nano Degree by Udacity.
