@@ -13,12 +13,14 @@ app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
 
 // Cors for cross origin allowance
-const cors = require('cors');
+const cors = require('cors'); // -> so that browser and server can talk to eachother without any security intereptions
 
 /* Initializing the main project folder */
-app.use(express.static('website'));
+app.use(express.static('website')); // pointing our app to the folder that we want them to look at.
+// This line of code connects our server-side code (the code in the server.js file) 
+// to our client-side code (the browser code written in the files housed in the website folder).
 
 const port = 3000;
 
-// spon up the server
-const server = app.listen(port, () => { console.log(`running on localhost: ${port}`) })
+// spin up the server
+const server = app.listen(port, () => { console.log(`running on localhost: ${port}`) });
