@@ -24,3 +24,7 @@ const port = 3000;
 
 // spin up the server
 const server = app.listen(port, () => { console.log(`running on localhost: ${port}`) });
+
+app.get("/", (req, res) => {
+    res.send("Hello Lakshay!");
+})
