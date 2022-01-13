@@ -26,5 +26,12 @@ const port = 3000;
 const server = app.listen(port, () => { console.log(`running on localhost: ${port}`) });
 
 app.get("/", (req, res) => {
+    console.log(req);
     res.send("Hello Lakshay!");
-})
+});
+
+// POST method route
+app.post('/', function (req, res) {
+    res.send('POST received');
+    console.log(req.body); //data received from client.
+});
