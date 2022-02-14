@@ -22,3 +22,16 @@ const postData = async (url = '', data = {}) => {
 }
 
 postData('/add', { answer: 42 });
+
+const getData = async (url = '') => {
+    console.log(data);
+    const response = await fetch(url);
+
+    try {
+        const newData = await response.json();
+        console.log(newData);
+        return newData;
+    } catch (error) {
+        console.log("error", error);
+    }
+}
