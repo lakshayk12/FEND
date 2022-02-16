@@ -35,3 +35,8 @@ const getData = async (url = '') => {
         console.log("error", error);
     }
 }
+
+getData("/fetch")
+    .then((data) => {
+        postData('add', { animal: data.animal });
+    });
