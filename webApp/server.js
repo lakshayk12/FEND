@@ -35,3 +35,13 @@ app.post('/', function (req, res) {
     res.send('POST received');
     console.log(req.body); //data received from client.
 });
+
+app.post('/add', addAnimal);
+
+const addAnimal = (req, res) => {
+    newEntry = {
+        animal: req.body.animal,
+    }
+    animalData.push(newEntry);
+    res.send(animalData);
+}
